@@ -3,9 +3,17 @@ return {
   opts = {
     picker = {
       sources = {
+        files = {
+          hidden = true,
+          ignored = true,
+        },
+        grep = {
+          hidden = true,
+          ignored = true,
+        },
         explorer = {
-          hidden = true,   -- Show hidden files by default
-          ignored = true,  -- Show git-ignored files by default (optional)
+          hidden = true,
+          ignored = true,
         },
       },
     },

@@ -6,3 +6,4 @@
 -- Prevent 'c' and 'C' from overwriting register/clipboard
 vim.keymap.set({ "n", "x" }, "c", '"_c', { desc = "Change without yanking" })
 vim.keymap.set({ "n", "x" }, "C", '"_C', { desc = "Change line without yanking" })
+vim.keymap.set("t", "<C-[>", "<C-\\><C-n>", { desc = "Exit terminal mode"})

@@ -3,9 +3,13 @@
 -- Add any additional keymaps here
 
 
--- Prevent 'c' and 'C' from overwriting register/clipboard
+-- Prevent 'c', 'C', 'x' and 'X' from overwriting register/clipboard
 vim.keymap.set({ "n", "x" }, "c", '"_c', { desc = "Change without yanking" })
 vim.keymap.set({ "n", "x" }, "C", '"_C', { desc = "Change line without yanking" })
+vim.keymap.set({ "n", "x" }, "x", '"_x', { desc = "Delete charachter without yanking" })
+vim.keymap.set({ "n", "x" }, "X", '"_X', { desc = "Delete previous character without yanking" })
+
+-- Exit Terminal Mode
 vim.keymap.set("t", "<C-[>", "<C-\\><C-n>", { desc = "Exit terminal mode"})
 
 

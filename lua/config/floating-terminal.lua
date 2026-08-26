@@ -1,9 +1,6 @@
 -- I know this is too much but please read this before using it 😀
 -- Make sure to use AI if this is not working for you.
 
--- ======================================
--- #code (floating-terminal.lua)
--- ======================================
 local m = {}
 
 local state = {

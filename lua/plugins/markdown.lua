@@ -8,4 +8,22 @@ return {
       },
     },
   },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    opts = {
+      checkbox = {
+        enabled = true,
+      },
+      heading = {
+        sign = true,
+        icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
+      },
+      code = {
+        sign = true,
+        width = "full",
+        right_pad = 0,
+      },
+    },
+  },
 }
+
